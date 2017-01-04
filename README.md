@@ -1,13 +1,13 @@
 # 4-20mA-Data-Logger
-4 Channel 4-20mA data logger using Arduino uC, RTC, SD Card.  Battery powered. Records 4 channels of 4-20mA data to a CSV file on attached SD card if any channel changes more than than the channels programmed deadband (up or down).  Has full serial configuration interface.
+4 Channel 4-20mA data logger using Arduino uC, RTC, SD Card.  Battery powered. Records 4 channels of 4-20mA data to a CSV file on attached SD card if any channel changes more than than the channels programmed deadband (up or down). Project was concieved and executed quickly to assist a customer with immediate data logging requirements when a purchased Omega data logger could not be commissioned.
 
 Future improvements:
 *Add Input protection i.e. BAT85
 *Change uC to ESP8266 to add wifi with socket connectivity and configuraiton webpage
+*Produce a low power version by using a 3.3V pro mini and ditching the boost converter.  Note that the program would not fit in a 3.3V pro mini for some reason, so some functionality would need to be sacrificed
 
 
-Example of main menu when '?' is sent over serial:
-==================================================================
+ Has full serial configuration interface.  Example of main menu when '?' is sent over serial:
 MAIN MENU
 
 FUNCTIONAL DESCRIPTION:
@@ -27,4 +27,3 @@ Note that all commands follow a CSV syntax: {letter} OR {letter},{number},...,{n
 	3. (t)ime,(YYYY),(MM),(DD),(HH),(MM),(SS) - Update RTC (Real time clock): e.g. t,2017,3,5,00,12,30 to set time to March 5th, 2016 @ 00:12:30
 
 For additional information please contact Terry Myers m:XXX.XXX.XXXX
-==================================================================
