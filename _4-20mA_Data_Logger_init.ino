@@ -292,7 +292,7 @@ void SDCreateMenuFiles() {
       file.println(F("\t2. (f)ile managemant and data - Prints data from storage device"));
       file.println(F("\t3. (t)ime,(YYYY),(MM),(DD),(HH),(MM),(SS) - Update RTC (Real time clock): e.g. t,2017,3,5,00,12,30 to set time to March 5th, 2016 @ 00:12:30"));
       file.println();
-      file.println(F("For additional information please contact Terry Myers m:215.262.4148"));
+      file.println(F("For additional information please contact Terry Myers m:XXX.XXX.XXXX"));
       file.println(line);
       
     file.close();
