@@ -2,9 +2,11 @@
 4 Channel 4-20mA data logger using Arduino uC, RTC, SD Card.  Battery powered. Records 4 channels of 4-20mA data to a CSV file on attached SD card if any channel changes more than than the channels programmed deadband (up or down). Project was concieved and executed quickly to assist a customer with immediate data logging requirements when a purchased Omega data logger could not be commissioned.
 
 Future improvements:
-*Add Input protection i.e. BAT85
-*Change uC to ESP8266 to add wifi with socket connectivity and configuraiton webpage
-*Produce a low power version by using a 3.3V pro mini and ditching the boost converter.  Note that the program would not fit in a 3.3V pro mini for some reason, so some functionality would need to be sacrificed
+1. Add Input protection i.e. BAT85
+2. Add LCd screen with rotary encoder and/or SPST momentary pushbuttons for configuration without going through the serial port
+3. Move channel configuration from EEPROM to SDCard to allow user another method to configure channels
+3. Change uC to ESP8266 to add wifi with socket connectivity and configuraiton webpage
+4. Produce a low power version by using a 3.3V pro mini and ditching the boost converter.  Note that the program would not fit in a 3.3V pro mini for some reason, so some functionality would need to be sacrificed
 
 
  Has full serial configuration interface.  Example of main menu when '?' is sent over serial:
