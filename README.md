@@ -1,4 +1,5 @@
 # 4-20mA-Data-Logger
+Schematic: https://easyeda.com/terryjmyers/New_Project-5ee76dab3cec4c7da693121a2d3a4c7d
 4 Channel 4-20mA data logger using Arduino uC, RTC, SD Card.  Battery powered. Records 4 channels of 4-20mA data to a CSV file on attached SD card if any channel changes more than than the channels programmed deadband (up or down). Project was concieved and executed quickly to assist a customer with immediate data logging requirements when a purchased Omega data logger could not be commissioned.
 
 Future improvements:
